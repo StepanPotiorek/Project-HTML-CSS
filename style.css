@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --text: #ffffff;
+  --navigation: #33292a;
+  --background-1: #33292a;
+  --background-2: #644b4f;
+  --background-3: #333333;
+  --background-4: #f2f2f2;
+  --link: #efa69d;
+  --hover: #e9877b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1400px;
+
+
+}
+
+/* Navigace */
+
+.menu {
+  background-color: var(--navigation);
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-wrapp {
+  width: 90%;
+  height: 100px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li {
+  list-style-type: none;
+  padding: 27px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text);
+  flex: 1 1 0;
+  font-size: 2rem;
+}
+
+.burger-btn {
+  display: none;
+  margin-left: auto;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Hero section */
+.hero {
+  background-image: url("images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  width: 100%;
+  height: 804px;
+  position: relative;
+}
+
+.hero-hero {
+  display: flex;
+  justify-content: right;
+}
+
+.hero-wrapper {
+  position: absolute;
+  top: 45%;
+}
+
+h1 {
+  color: var(--text);
+  font-size: 6rem;
+  text-align: right;
+  line-height: 112.5px;
+}
+
+/* About Us */
+.about {
+  background-color: var(--background-4);
+}
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 50px;
+  padding: 90px 0 110px 0;
+}
+
+.about-text {
+  flex: 1 1 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.about-us {
+  flex: 1 1 0;
+}
+
+.about-us img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* What */
+.what {
+  background-color: var(--background-1);
+  color: var(--text);
+  padding: 100px 0;
+}
+
+.what-text {
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.what-text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.what-icons {
+  display: flex;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.icon {
+  flex: 1 1 0;
+}
+
+.icon img {
+  width: 25%;
+}
+
+.icon h3 {
+  padding-top: 12px;
+  font-size: 1.5rem;
+}
+/* Our trips */
+
+.trips {
+  background-color: #ffffff;
+}
+
+.trips-wrapper {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.first,
+.second,
+.third {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.el-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-4);
+  font-size: 1.5rem;
+}
+
+.item {
+  flex: 1 1 0;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Where */
+.where {
+  background-color: var(--background-2);
+  color: var(--text);
+  height: 400px;
+}
+
+.where-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+  gap: 10px;
+}
+
+.where-title {
+  flex: 0 0 40%;
+  font-size: 40px;
+}
+
+.where-text {
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+.where-text article {
+  padding-bottom: 20px;
+  font-size: 1rem;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 12px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  border: 0;
+  font-size: 0.875rem;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+/* Reviews */
+#reviews {
+  background-color: var(--bg-col-light);
+  color: var(--text-col-dark);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 50px;
+}
+
+.text {
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: center;
+  margin: 70px 50px 70px 50px;
+  /* padding: 50px 100px; */
+}
+
+.article {
+  line-height: 1.5;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0% 35%;
+  margin-bottom: 50px;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: calc(4 * var(--my-gap));
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--my-gap);
+  }
+}
+
+.review-card {
+  width: calc(50% - 2 * var(--my-gap));
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    width: 100%;
+  }
+}
+
+.title-card {
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin: 20px;
+}
+/* Photogallery */
+.gallery-big-photo-container {
+  background-color: var(--bg-col-darker);
+}
+
+.gallery-big-photo {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px; /* upper limit for size of the photos*/
+  margin: 0 auto;
+}
+
+.gallery-big-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
+
+.gallery-big-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .gallery-big-item {
+    flex-basis: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: var(--background-3);
+  text-align: center;
+  padding: 40px 0;
+  color: var(--text);
+}
+
+.footer a:link,
+.footer a:visited {
+  color: var(--link);
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 0.75;
+}
+
+.footer a:hover,
+.footer a:active {
+  color: var(--hover);
+  border-bottom: 2px solid var(--hover);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-wrapper {
+    width: 85%;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+  }
+  .container {
+    width: 85%;
+  }
+
+  nav {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .el-5 {
+    padding: 20px;
+  }
+
+  .reviews-1 img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .what-icons {
+    flex-direction: column;
+  }
+
+  .icon {
+    padding: 30px;
+  }
+
+  .first,
+  .second,
+  .third {
+    flex-direction: column;
+  }
+
+  .where-wrapper {
+    flex-direction: column;
+  }
+
+  .reviews-reviews {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .photogallery-1 img {
+    max-width: 100%;
+  }
+}
