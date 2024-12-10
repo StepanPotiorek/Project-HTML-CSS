@@ -64,7 +64,7 @@ body {
   text-decoration: none;
   color: var(--text);
   flex: 1 1 0;
-  font-size: 2rem;
+  font-size: 25px;
 }
 
 .burger-btn {
